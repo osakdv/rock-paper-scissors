@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rock, Paper, Scissor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/main.css"
+    />
+  </head>
+  <body>
+    <div class="floating-top-marquee-wrapper-one">
+      <div
+        class="marquee"
+        style="
+          background-color: #ed4441;
+          transform: rotate(-2deg);
+          margin-top: 2em;
+          position: relative;
+        "
+      >
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+      </div>
+    </div>
+
+    <!-- Goes above the top marquee hence absolute -->
+    <div class="floating-top-marquee-wrapper-two">
+      <div
+        class="marquee"
+        style="background-color: black; transform: rotate(10deg)"
+      >
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+        <h2>Rock. Paper. Scissors.</h2>
+      </div>
+    </div>
+
+    <div class="paper-rock-scissors-grid">
+      <div class="lft-area">
+        <!-- Rock -->
+        <div class="element-img-wrapper" id="rock">
+          <img src="assets/img/rock.png" alt="rock" />
+        </div>
+        <!-- score -->
+        <div class="score">
+          <svg
+            id="fifi-score"
+            width="121"
+            height="69"
+            viewBox="0 0 121 69"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M51.6537 6.29511C54.744 -1.84265 66.256 -1.84264 69.3463 6.29512L69.7595 7.38326C71.4852 11.9275 76.7031 14.0543 81.1137 12.0112L96.6842 4.79892C101.953 2.35856 106.678 9.04186 102.62 13.1949V13.1949C99.2722 16.6214 101.913 22.3714 106.694 22.0642L115.556 21.4948C120.91 21.1508 122.164 28.8365 116.977 30.2113V30.2113C112.577 31.3776 112.577 37.6224 116.977 38.7887V38.7887C122.164 40.1635 120.91 47.8492 115.556 47.5052L106.694 46.9358C101.913 46.6286 99.2722 52.3786 102.62 55.8051V55.8051C106.678 59.9581 101.953 66.6414 96.6842 64.2011L81.1137 56.9888C76.7031 54.9457 71.4852 57.0725 69.7595 61.6167L69.3463 62.7049C66.256 70.8426 54.744 70.8426 51.6537 62.7049L51.2405 61.6167C49.5148 57.0725 44.2969 54.9457 39.8863 56.9888L24.3158 64.2011C19.0474 66.6414 14.3224 59.9581 18.38 55.8051V55.8051C21.7278 52.3786 19.0866 46.6286 14.306 46.9358L5.44407 47.5052C0.0895825 47.8492 -1.1636 40.1635 4.02281 38.7887V38.7887C8.42286 37.6224 8.42286 31.3776 4.02281 30.2113V30.2113C-1.1636 28.8365 0.0895967 21.1508 5.44408 21.4948L14.306 22.0642C19.0866 22.3714 21.7278 16.6214 18.38 13.1949V13.1949C14.3224 9.04186 19.0474 2.35857 24.3158 4.79893L39.8863 12.0112C44.2969 14.0543 49.5148 11.9275 51.2405 7.38325L51.6537 6.29511Z"
+              fill="black"
+            />
+          </svg>
+
+          <h3 class="user-playing">FIFI</h3>
+        </div>
+      </div>
+      <div class="middle-area">
+        <!-- Scissors -->
+        <div class="element-img-wrapper" id="scissors">
+          <img src="assets/img/scissors.png" alt="rock" />
+        </div>
+      </div>
+      <div class="rht-area">
+        <!-- paper -->
+        <div class="element-img-wrapper" id="paper">
+          <img src="assets/img/paper.png" alt="rock" />
+        </div>
+        <!-- player score-->
+        <!-- score -->
+        <div class="score">
+          <svg
+            id="player-score"
+            width="121"
+            height="69"
+            viewBox="0 0 121 69"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M51.6537 6.29511C54.744 -1.84265 66.256 -1.84264 69.3463 6.29512L69.7595 7.38326C71.4852 11.9275 76.7031 14.0543 81.1137 12.0112L96.6842 4.79892C101.953 2.35856 106.678 9.04186 102.62 13.1949V13.1949C99.2722 16.6214 101.913 22.3714 106.694 22.0642L115.556 21.4948C120.91 21.1508 122.164 28.8365 116.977 30.2113V30.2113C112.577 31.3776 112.577 37.6224 116.977 38.7887V38.7887C122.164 40.1635 120.91 47.8492 115.556 47.5052L106.694 46.9358C101.913 46.6286 99.2722 52.3786 102.62 55.8051V55.8051C106.678 59.9581 101.953 66.6414 96.6842 64.2011L81.1137 56.9888C76.7031 54.9457 71.4852 57.0725 69.7595 61.6167L69.3463 62.7049C66.256 70.8426 54.744 70.8426 51.6537 62.7049L51.2405 61.6167C49.5148 57.0725 44.2969 54.9457 39.8863 56.9888L24.3158 64.2011C19.0474 66.6414 14.3224 59.9581 18.38 55.8051V55.8051C21.7278 52.3786 19.0866 46.6286 14.306 46.9358L5.44407 47.5052C0.0895825 47.8492 -1.1636 40.1635 4.02281 38.7887V38.7887C8.42286 37.6224 8.42286 31.3776 4.02281 30.2113V30.2113C-1.1636 28.8365 0.0895967 21.1508 5.44408 21.4948L14.306 22.0642C19.0866 22.3714 21.7278 16.6214 18.38 13.1949V13.1949C14.3224 9.04186 19.0474 2.35857 24.3158 4.79893L39.8863 12.0112C44.2969 14.0543 49.5148 11.9275 51.2405 7.38325L51.6537 6.29511Z"
+              fill="black"
+            />
+          </svg>
+
+          <h3 class="user-playing">YOU</h3>
+        </div>
+        <!-- Reset btn -->
+        <button id="restart-game">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.537 19.567C16.7224 21.1393 14.401 22.0033 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 14.136 21.33 16.116 20.19 17.74L17 12H20C19.9998 10.1562 19.3628 8.36906 18.1967 6.94089C17.0305 5.51272 15.4069 4.53119 13.6003 4.16236C11.7938 3.79352 9.91533 4.06002 8.28268 4.91677C6.65002 5.77351 5.36342 7.16791 4.64052 8.86408C3.91762 10.5603 3.80281 12.4541 4.31549 14.2251C4.82818 15.9962 5.93689 17.5358 7.45408 18.5836C8.97127 19.6313 10.8038 20.1228 12.6416 19.9749C14.4795 19.827 16.2099 19.0488 17.54 17.772L18.537 19.567Z"
+              fill="black"
+            />
+          </svg>
+
+          <span>Restart</span>
+        </button>
+      </div>
+    </div>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

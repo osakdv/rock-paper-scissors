@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Comic Neue", cursive;
+  background-color: #fcfec7;
+  overflow-x: hidden;
+  position: relative;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.floating-top-marquee-wrapper-one {
+  height: auto;
+  width: 100vw;
+  position: relative;
+  top: 0;
+}
+
+.floating-top-marquee-wrapper-two {
+  height: auto;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+
+.marquee {
+  padding: .4em 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  width: 110vw;
+  overflow: hidden;
+}
+
+.marquee h2 {
+  font-size: 3rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.02em;
+  -webkit-text-stroke-color: white;
+  white-space: nowrap;
+  animation: move-rht 6000ms linear infinite;
+}
+
+.floating-top-marquee-wrapper-two .marquee h2 {
+  color: white;
+  animation: move-lft 6000ms linear infinite;
+}
+
+@keyframes move-lft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-rht {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.paper-rock-scissors-grid {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 0 2em;
+}
+
+.paper-rock-scissors-grid  .element-img-wrapper img {
+  width: 12em;
+  cursor: pointer;
+}
+
+.paper-rock-scissors-grid .middle-area {
+  border-left: 1px solid #959592;
+  border-right: 1px solid #959592;
+  padding: 8em 5em 0 5em;
+  justify-self: center;
+}
+
+.paper-rock-scissors-grid .rht-area, .lft-area .element-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.paper-rock-scissors-grid #rock {
+  margin-top: 15em !important;
+}
+
+.paper-rock-scissors-grid #paper {
+  margin-top: 10em !important;
+}
+
+.lft-area .score {
+  margin-top: 10em;
+}
+
+.score h3 {
+  font-size: 2.3rem;
+  color: transparent;
+  -webkit-text-stroke: .02em;
+  -webkit-text-stroke-color: black;
+}
+
+.score svg {
+  position: relative;
+}
+
+.lft-area .score h3 {
+  transform: rotate(3deg);
+  margin-left: .8em;
+  margin-top: .5em;
+}
+
+.rht-area .score {
+  margin-top: 30em;
+}
+
+.rht-area .score h3 {
+  margin-left: 1em;
+  margin-top: .5em;
+}
+
+.rht-area #restart-game {
+  margin-top: 50em;
+  height: 3em;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: .5em 2em;
+  display: flex;
+  align-items: center;
+  gap: .7em;
+  font-size: 1.1rem;
+}
